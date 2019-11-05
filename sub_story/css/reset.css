@@ -1,0 +1,85 @@
+@charset "utf-8";
+
+html,body{width: 100%; height: 100%;}
+
+html,body,div,span,h1,h2,h3,h4,h5,h6,p,
+blockquote,q,abbr,address,cite,code,img,
+ul,ol,li,dl,dt,dd,a,sub,sup,strong,em,
+header,section,article,footer,aside,nav,
+form,fieldset,legend,label,video{margin: 0; padding: 0; border: 0;}
+
+header,section,article,footer,aside,nav{display: block;}
+
+button,label{cursor:pointer;}
+
+hr,legend{display:none;}
+textarea{resize: none;}
+
+
+ul,ol,li{list-style: none;}
+
+
+address,em{font-style:normal; font-weight:400;}
+q{quotes:none;}
+
+a:link{color: #000;text-decoration: none;}
+a:visited{color: #000;text-decoration: none;}
+a:hover{color: #000;text-decoration: none;}
+a:active{color: #000;text-decoration: none;}
+body{overflow-y: scroll; color: #000; font-size: 0.8em; line-height:1.4; font-family: 돋움,dotum,굴림,gulim;}
+
+.text-center{height: 100px;line-height: 100px; text-align: center;}
+
+.clearfix{*zoom:1}
+.clearfix:after{
+  display: block;
+  clear: both;
+  content: '';
+}
+
+@charset "utf-8";
+
+html,body{width: 100%; height: 100%;}
+
+html,body,div,span,h1,h2,h3,h4,h5,h6,p,
+blockquote,q,abbr,address,cite,code,img,
+ul,ol,li,dl,dt,dd,a,sub,sup,strong,em,
+header,section,article,footer,aside,nav,
+table,caption,thead,tbody,tfoot,tr,th,td,
+form,fieldset,legend,label,video{margin: 0; padding: 0; border: 0;}
+
+header,section,article,footer,aside,nav{display: block;}
+
+button,label{cursor:pointer;}
+
+table{border-collapse: collapse;}
+
+hr,legend,caption{display:none;}
+textarea{resize: none;}
+
+
+ul,ol,li{list-style: none;}
+
+
+address,em{font-style:normal; font-weight:400;}
+q{quotes:none;}
+
+a:link{color: #000;text-decoration: none;}
+a:visited{color: #000;text-decoration: none;}
+a:hover{color: #000;text-decoration: none;}
+a:active{color: #000;text-decoration: none;}
+body{overflow-y: scroll; color: #000; font-size: 0.8em; line-height:1.4; font-family: 돋움,dotum,굴림,gulim;}
+
+.text-center{height: 100px;line-height: 100px; text-align: center;}
+
+.clearfix{*zoom:1}
+.clearfix:after{
+  display: block;
+  clear: both;
+  content: '';
+}
+
+.sr-only {
+	position: absolute;
+	left: -9999px;
+}
