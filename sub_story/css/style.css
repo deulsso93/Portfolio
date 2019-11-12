@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,400,700|Oswald:600&display=swap&subset=korean');
 
 body{font-family: 'Noto Sans KR','Oswald',sans-serif; color: #454545;}
-#wrap{min-width:1200px;}
+#wrap{min-width:1200px;   overflow: hidden;}
 
 
 /*header*/
@@ -30,11 +30,11 @@ article>h2{font-size: 36px; font-weight: 400;}
 
 
 /*article>>story_container*/
-.story_container{width: 1200px; margin: 0 auto;}
+.story_container{width: 1200px; margin: 0 auto; }
 .story_container>.concept{padding-top: 50px;}
 .story_container>.concept>p{}
 .story_container>.concept>p.circle{width: 250px;height: 250px; margin: 0 auto;font-size: 36px; background-color: #34d0f7; border-radius: 250px; line-height: 250px;text-align: center;}
-.story_container>.concept>p.circle:after{display: block;width: 4px; height:3500px; margin: 0 auto;background-color: #828282;content: '';}
+.story_container>.concept>p.circle:after{display: block;width: 4px; height:3200px; margin: 0 auto;background-color: #828282;content: '';}
 .story_container>.concept>p.concept_txt{width: 698px; height: 100%; margin: 50px auto 0;background-color: #fff; border: 1px solid ; font-weight: 100; font-size: 23px; padding: 10px 10px; text-align: center;}
 .story_container>.concept>p.concept_txt>span{font-size: 26px;font-weight: 400;color: #ff4a4a;}
 
@@ -75,9 +75,10 @@ article>h2{font-size: 36px; font-weight: 400;}
 .props>h2{position: absolute; top:80px; left: 170px; }
 .props>.props_wrap{position: absolute; left: 50%; top: 80px;width: 850px; margin-left: -425px;}
 .props_wrap>ul{width: 100%; margin-top: 150px;}
-.props_wrap>ul>li{position: relative;float: left;width: 250px; height: 400px;margin-left: 50px; margin-bottom: 20px; background-color: #fff;}
+.props_wrap>ul>li{position: relative;float: left;width: 250px;margin-left: 50px; margin-bottom: 20px; background-color: #fff;}
 .props_wrap>ul>li:nth-child(1),.props_wrap>ul>li:nth-child(4){margin-left: 0;}
 .props_wrap>ul>li:nth-child(4),.props_wrap>ul>li:nth-child(5),.props_wrap>ul>li:nth-child(6){margin-bottom: 0;}
+.props_wrap>ul>li:nth-child(4),.props_wrap>ul>li:nth-child(5),.props_wrap>ul>li:nth-child(6){margin-top: 90px;}
 
 .props_wrap>ul>li>.img:after{position: absolute; bottom: 0; left: 80px;display: block; width: 181px; height: 30px; transform:rotate(-10deg);background-image: url(../images/intro_name.png);content: '캘리그라피 이름';}
 
