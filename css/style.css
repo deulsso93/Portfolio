@@ -145,7 +145,7 @@ h2.sub_main{text-align: center; padding: 10px 0;}
 div.lightbox{
 	display: none;position: fixed; z-index: 1000;  left: 50%; top: 50%; width: 1000px; height:800px; overflow: auto; margin: -450px 0 0; margin-left: -500px;}
 div.lightbox>img{display: block; width: 100%;}
-div.shadow{display: none; position: fixed;  z-index: 20; left: 0; top: 0; width: 100%; height: 100%; background-color: #000; opacity: 0.55;}
+div.shadow{display: none; position: fixed;  z-index: 9999; left: 0; top: 0; width: 100%; height: 100%; background-color: #000; opacity: 0.55;}
 
 
 /*section.portfolio_web - 슬라이드*/
