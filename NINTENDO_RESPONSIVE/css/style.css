@@ -1,0 +1,218 @@
+@charset "utf-8";
+
+body{font-family: 'Malgun Gothic','맑은 고딕',sans-serif;}
+
+#wrap{}
+
+
+/*header*/
+header{position: relative; z-index: 1000;height: 74px; border-bottom: 1px solid #d9d9d9;}
+
+header>h1{position: relative;width: 15%; background-color: #e60012; background-image: url(../images/logo_nintendo_red.gif); background-repeat: no-repeat; background-position: center center;}
+header>h1>a{display: block; height: 74px;text-indent: -9999px;}
+
+header>nav{position: absolute; top: 0; left: 15%; z-index: 1000; width:calc(85% - (75px + 141px));}
+header>nav>.header_container{height: 100%;}
+header>nav>.header_container>li{float: left; width:calc((100% / 5)); background-color: #fff; border-right: 1px solid #d9d9d9; box-sizing: border-box;}
+header>nav>.header_container>li>a{display: block; height: 100%; color: #111;font-size: 18px; line-height: 74px;text-align: center;background-color: #fff;}
+header>nav>.header_container>li:hover>a{color: #e60012;}
+
+
+header>nav>.header_container>li>.sub{display: none;height: 100%; padding: 20px 0px; border: 1px solid #d9d9d9; background-color: #f7f7f7; box-sizing: content-box;}
+header>nav>.header_container>li>.sub>li{padding: 10px 10px 10px 15px;}
+header>nav>.header_container>li>.sub>li>a{text-align: left; color: #111;font-size: 15px; line-height: 1.5;}
+header>nav>.header_container>li>.sub>li:hover>a{color: #e60012;}
+
+header>.btn_mnu{}
+header>.btn_mnu>.btn-folded{display: none;} /*반응형때 보이게하기*/
+header>.btn_mnu>.btn-eshop{position: absolute; top: 0; right: 75px; width: 141px; background-image: url(../images/btn_head_eshop.gif); height: 100%; text-indent: -9999px;}
+header>.btn_mnu>.btn-search{position: absolute; right: 0; top: 0; width: 75px; height: 100%; background-position: center center; text-indent: -9999px;}
+header>.btn_mnu>.btn-search:after{display: block; position: absolute;  top: 50%; right: 50%; margin-right: -13.5px; margin-top: -13.5px;width: 27px;height: 27px; background-image: url(../images/search.png); content: ''; }
+
+
+
+
+/*section top*/
+
+
+section{width: 100%;}
+
+/*슬라이드*/
+#slides{width: 100%;}
+#slides>.slides-container{overflow: hidden;position: relative; width: 100%; height: 100%;}
+#slides>.slides-container>div{}
+#slides>.slides-container>div>a{display: block; width: 100%; height: 100%;text-indent: -9999px;}
+
+
+
+/*슬라이드 버튼*/
+
+#slides>.owl-prev,#slides>.owl-next{background: none; outline: none; border: none; position: absolute; z-index: 100;top: 50%; margin-top: -80px;width: 44px; height: 68px; background-image: url(../images/main_slide_btn.png); text-indent: -9999px; cursor: pointer;}
+#slides>.owl-prev{left: 3%;}
+#slides>.owl-next{right: 3%;background-position: -44px 0;}
+
+
+
+/*article 공통*/
+article{position: relative;width: 1200px; margin: 80px auto 0;}
+article>.tit{font-size: 26px; font-weight: 700;}
+article>.tit>span{margin-left: 12px;font-size: 16px; font-weight:100;}
+article>.contents{position: relative;width: 1200px; margin: 40px 0 0;}
+article>.contents>li{position: relative;float: left;width: 276px;margin-left: 32px; background-repeat: no-repeat; background-size: contain;}
+article>.contents>li:nth-child(1),article>.contents>li:nth-child(5){margin-left: 0;}
+article>.contents>li>a{display: block;height: 160px;text-indent: -9999px; transition:all 0.3s; }
+article>.contents>li:hover>a{background-color:rgba(255,255,255,0.3);}
+article>.contents>li>.context{padding:15px 0 20px;}
+article>.contents>li>.context>.sub_tit,
+article>.contents>li>.context .sub_tit{color: #e60012; font-size: 14px; font-weight: 100; padding: 5px 0;}
+article>.contents>li>.context>p:first-of-type{height: 76px;font-size: 18px; font-weight: 700; letter-spacing: -0.3px;}
+article>.contents>li>.context>p:last-of-type{padding-top: 20px;font-size: 12px; font-weight: 100;}
+
+
+
+/*article new-updates*/
+article.new-updates>.more{position: absolute;top: 0; right: 0; display: block;width: 16px;height: 16px; background-image: url(../images/icon_more.png); text-indent: -9999px;}
+article.new-updates>.contents>li:nth-child(1){background-image: url(../images/list_news_mario_joycon_191105.jpg);}
+article.new-updates>.contents>li:nth-child(2){background-image: url(../images/list_news_190710_NS_Zacian.jpg);}
+article.new-updates>.contents>li:nth-child(3){background-image: url(../images/list_news_tetcup7_191101.jpg);}
+article.new-updates>.contents>li:nth-child(4){background-image: url(../images/img_sw_list_Luigis_Mansion3.jpg);}
+article.new-updates>.contents>li:nth-child(5){background-image: url(../images/list_news_ring_190923.jpg);}
+article.new-updates>.contents>li:nth-child(6){background-image: url(../images/img_sw_list_DXM.jpg);}
+article.new-updates>.contents>li:nth-child(7){background-image: url(../images/img_sw_list_Mistover.jpg);}
+article.new-updates>.contents>li:nth-child(8){background-image: url(../images/img_sw_list_overwatch.jpg);}
+
+
+/*download 배너*/
+.download{width: 100%; margin: 30px 0;background-image: url(../images/main_banner_eshop.gif); background-position: top center; background-color: #fe7c0a;}
+.download>a{display: block; height: 140px; text-indent: -9999px;}
+
+
+
+/*article*/
+
+/*game-list*/
+article.game-list>.contents>li:nth-child(1){background-image: url(../images/list_news_ring_190923.jpg);}
+article.game-list>.contents>li:nth-child(2){background-image: url(../images/img_sw_list_Luigis_Mansion3.jpg);}
+article.game-list>.contents>li:nth-child(3){background-image: url(../images/img_sw_list_Zelda_island.jpg);}
+article.game-list>.contents>li:nth-child(4){background-image: url(../images/img_sw_list_Dragon_Quest_DE.jpg);}
+article.game-list>.contents>li:nth-child(5){background-image: url(../images/img_sw_list_Super_Mario_Maker2.jpg);}
+article.game-list>.contents>li:nth-child(6){background-image: url(../images/img_sw_list_Fire_Emblem_Three_Houses.jpg);}
+article.game-list>.contents>li:nth-child(7){background-image: url(../images/img_sw_list_supersmashbros_ultimate.jpg);}
+article.game-list>.contents>li:nth-child(8){background-image: url(../images/img_sw_list_aaaaa.jpg);}
+
+/*new*/
+article.game-list>.contents>li:nth-child(1):before,
+article.game-list>.contents>li:nth-child(2):before,
+article.game-list>.contents>li:nth-child(3):before,
+article.game-list>.contents>li:nth-child(4):before{position: absolute; top: 0;left: 0;width: 63px; height: 63px; background-image: url(../images/ico_sw_list_new.png);content: '신작'; text-indent: -9999px;}
+
+article.game-list>.contents>li>.context>div>.sub_tit{position: relative;}
+article.game-list>.contents>li>.context>div>.sub_tit>span{display: block;position: absolute; top: 0; padding: 3px 5px;  color: #fff; font-size: 10px; font-weight: 700;background-color: #e60012; border-radius: 3px;}
+article.game-list>.contents>li:first-child>.context>div>.sub_tit>.cat{right: 0;}
+article.game-list>.contents>li>.context>div>.sub_tit>.cat{right: 25px;}
+article.game-list>.contents>li>.context>div>.sub_tit>.type{right: 0;}
+article.game-list>.contents>li>.context>p{font-size: 18px; font-weight: 700; letter-spacing:-0.5px;}
+
+
+article.game-list>.contents>li>.context>div:last-child{position: relative;}
+article.game-list>.contents>li>.context>div>p:first-of-type{font-size: 12px; font-weight: 100;}
+article.game-list>.contents>li>.context>div>.lang{position: absolute; bottom: 0;right: 0; width: 60px; height: 36px; background-image: url(../images/ico_lang_foreign_s.png); background-position: 0 -116px; background-repeat: no-repeat; text-indent: -9999px;}
+
+
+/*info-video*/
+article.game-list>.info-video{display:flex; justify-content: space-between; margin: 100px 0;}
+article.game-list>.info-video>li{width: 31.1133333%; background-size: cover}
+article.game-list>.info-video>li:nth-child(1){background-image: url(../images/banner_main_bottom01.jpg);}
+article.game-list>.info-video>li:nth-child(2){background-image: url(../images/banner_main_bottom02.jpg);}
+article.game-list>.info-video>li:nth-child(3){background-image: url(../images/banner_main_bottom03.jpg);}
+article.game-list>.info-video>li>a{display: block;height: 140px; text-indent: -9999px;}
+
+
+/*etc*/
+article.game-list>.etc{margin: 50px 0;}
+article.game-list>.etc>h2{text-align: center; font-size: 26px;}
+article.game-list>.etc>div{position: relative;margin-top: 50px;float: left;width: 33.33%; height: 118px; border: 1px solid #d9d9d9; border-bottom: 1px solid #111; box-sizing: border-box;}
+
+article.game-list>.etc>div:before{position: absolute; left: 50px; top: 30px; width: 60px; height: 60px;background-image: url(../images/unit_icon.png); background-repeat: no-repeat;content: '';}
+article.game-list>.etc>div:nth-of-type(2):before{background-position: 0 -60px;}
+article.game-list>.etc>div:nth-of-type(3):before{background-position: 0 -120px;}
+article.game-list>.etc>div:nth-of-type(1),
+article.game-list>.etc>div:nth-of-type(2){border-right: 0;}
+
+article.game-list>.etc>div>a{display: block;height: 118px;}
+article.game-list>.etc>div>a>span{position: absolute; right: 35px; top: 30px;text-align: middle;font-size: 18px;}
+article.game-list>.etc>div:nth-of-type(1)>a>span{top: 45px;}
+
+article.game-list>.etc>div>a>span:before{position: absolute; right: -10px; bottom:7px;width: 6px; height: 10px; background-image: url(../images/banner_arrow.png);content: '';}
+
+
+/*news_short*/
+article.game-list>.news_short{position: relative;width: 100%; margin: 60px 0 90px; padding: 20px;border-top: 1px solid #d9d9d9; border-bottom: 1px solid #d9d9d9;}
+article.game-list>.news_short>h4{position: absolute; top: 0; left: 0; padding: 21px 30px 21px 10px;font-size: 16px; }
+article.game-list>.news_short>h4>a{display: inline-block;width: 20px; height: 20px; margin-left: 2px;border: 1px solid #d9d9d9; border-radius: 5px; background-image: url(../images/icon_plus.png); background-repeat: no-repeat; background-position: center center; text-indent: -9999px;}
+article.game-list>.news_short>.news_txt{margin-left: 200px;}
+article.game-list>.news_short>.news_txt>li{float: left; margin-left: 50px; font-size: 16px;}
+article.game-list>.news_short>.news_txt>li:last-child{margin-left: 220px;}
+article.game-list>.news_short>.news_txt>li:before{display: inline-block;width: 4px; height: 4px; margin-bottom: 3px; margin-right: 10px;background-color: #e60012; content: '';}
+article.game-list>.news_short>.news_txt>li>a{}
+
+
+
+/*navi*/
+.navi{position: relative; padding: 35px 0; background-color: #e60012;}
+.navi>.navi_wrap{width: 1200px; margin: 0 auto;}
+.navi>.navi_wrap>h3{display: inline-block;width: 190px; height: 29px; background-image: url(../images/top.png); text-indent: -9999px;}
+.navi>.navi_wrap>a.top{position: relative; float: right; width: 25px; height: 25px; border-radius: 15px; border: 2px solid #fff; text-indent: -9999px; transition:all 0.3s ease;}
+.navi>.navi_wrap>a.top:hover{width: 70px; background-color: #fff;}
+.navi>.navi_wrap>a.top:hover:before{display: block;position: absolute; top: 50%; left: 10px; z-index: 1000;margin-top: -9px; color: #e60012; font-weight: 700; font-size: 14px; text-indent: 0;content: "TOP";}
+.navi>.navi_wrap>a.top:after{position: absolute; top: 8px; right: 6px;width: 12px; height: 7px; background-image: url(../images/btn_switch_main_gotoTop.png);content: ''; transition: all 0.3s ease;}
+.navi>.navi_wrap>a.top:hover:after{background-image: url(../images/btn_switch_main_gotoTop_over.png);}
+
+
+/*section bottom*/
+
+/*link*/
+section.bottom{padding: 40px 0;}
+section.bottom>.inner{width: 1200px; margin: 0px auto;text-align: center;}
+section.bottom .link{}
+section.bottom .link>.link_sns{display: inline-block; margin-right: 40px;}
+section.bottom .link>.link_sns>li{float: left;width: 60px; margin-left: 20px; background-image: url(../images/bottom.png);background-repeat: no-repeat;}
+section.bottom .link>.link_sns>li:nth-child(1){margin-left: 0;background-position: 0 -160px;}
+section.bottom .link>.link_sns>li:nth-child(2){background-position: -70px -160px;}
+section.bottom .link>.link_sns>li:nth-child(3){background-position: -140px -160px;}
+section.bottom .link>.link_sns>li>a{display: block; height: 60px; text-indent: -9999px;}
+
+section.bottom .link>.link_nintendo{display: inline-block;}
+section.bottom .link>.link_nintendo>li{float: left;width: 370px; margin-left: 20px;background-repeat: no-repeat;}
+section.bottom .link>.link_nintendo>li:first-child{margin-left: 0;background-image: url(../images/bottom.png);}
+section.bottom .link>.link_nintendo>li:last-child{background-image: url(../images/btn_footer_amiibo.png);}
+section.bottom .link>.link_nintendo>li>a{display: block; height: 60px; text-indent: -9999px;}
+
+
+
+/*bottom_nav*/
+
+section.bottom>nav{width: 1200px;margin: 60px auto 0; text-align: center;}
+section.bottom>nav>.bottom_container{width: 100%;display:flex; justify-content: space-between; }
+section.bottom>nav>.bottom_container>li{width: 25%;}
+section.bottom>nav>.bottom_container>li>.bottom_tit{position: relative;padding-top: 15px; margin-bottom: 20px; font-size: 16px; }
+section.bottom>nav>.bottom_container>li>.bottom_tit:before{position: absolute; top: 0; left: 50%; margin-left: -9px;width: 18px; height: 3px; background-color: #e60012; content: '';}
+section.bottom>nav>.bottom_container>li>ol{}
+section.bottom>nav>.bottom_container>li>ol>li{margin-top: 5px;}
+section.bottom>nav>.bottom_container>li>ol>li>a{font-size: 16px;color: #737373;}
+section.bottom>nav>.bottom_container>li>ol>li>a{}
+
+
+/*footer*/
+
+footer{padding: 30px 0; background-color: #f5f5f5; font-size: 14px; color:#737373;}
+footer>.inner{position: relative;width: 1200px; margin:0 auto;}
+footer>.inner>.footer_user-info>li{float: left; }
+footer>.inner>.footer_user-info>li>a{ color:#737373; }
+footer>.inner>.footer_user-info>li:last-child:before{display: inline-block; padding: 0 5px; color:#737373;content: '|';} 
+footer>.inner>p{position: absolute; right: 0; text-align: right;}
+footer>.inner>p>span{font-size: 12px;}
+footer>.inner>.footer_company-info>li{float: left; margin-left: 10px;}
+footer>.inner>.footer_company-info>li:first-child{margin-left: 0;}
+
+
