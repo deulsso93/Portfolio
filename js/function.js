@@ -143,6 +143,18 @@ $(function(){
 		$('div.shadow').next().show();
 		
 	});
+	$('a.progress2').on('click',function(evt){
+		evt.preventDefault();
+		
+		$lightbox.children('img').attr({
+			src:'./KAKAO_renewel/plan/kakao_renewel_plan.jpg',
+			alt:'카카오 리뉴얼 기획안'			
+			
+		});
+		$('div.shadow').show();
+		$('div.shadow').next().show();		
+		
+	});	
 	$('a.progress3').on('click',function(evt){
 		evt.preventDefault();
 		
