@@ -1,0 +1,481 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+	<meta charset="UTF-8">
+	<meta name="Keywords" content="">
+	<meta name="Description" content="">
+	<title>MUNGULAND</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery-1.12.4.js"></script>
+	<script type="text/javascript">
+      $(function(){        
+
+			var $gnb=$('.nav>ul');
+		  	var intervalKey=null;
+		  	var nowIdx=0;
+		  	/* function slides(){
+				var imgs=$('.banner').find('li');
+				imgs.eq(0).fadeOut(3000,function(){imgs.eq(0).appendTo($('.banner'))
+				});
+				imgs.eq(1).fadeIn(3000);
+				
+				}
+			*/
+			$gnb.on('mouseenter',function(){
+			$('nav .sub').stop().slideDown(500);
+			$('.gnb_bg').stop().slideDown(500);
+
+			});
+			$gnb.on('mouseleave',function(){
+			$('nav .sub').stop().slideUp(400);
+			$('.gnb_bg').stop().slideUp(400);
+			});
+
+				IntervalKey=setInterval(function(){
+					if(nowIdx<2){
+						nowIdx++;
+					}else{
+						nowIdx=0;
+					}
+					
+					$('.banner>li').filter('.on').fadeOut(1500).removeClass('on');
+					$('.banner>li').eq(nowIdx).stop().fadeIn(1500).addClass('on');
+					
+				},2500);
+
+	
+	  });
+
+	</script>
+ </head>
+<body>
+	<div id="top_banner">
+		<ul>
+			<li><a href="#"><img src="shopping_img/top_banner.png" alt="KINTO 일본 주방 브랜드 KINTO 모음전"></a></li>
+		</ul>	
+	</div>
+	
+	<header id="main_header">
+		<div class="box">
+			<h1>
+				<a href="#" title="문구랜드로 이동"><img src="shopping_img/h1_logo.gif" alt="MUNGULAND"></a>
+			</h1>
+			<nav class="gnb1">
+				<ul>
+					<li><a href="#">로그인</a></li>
+					<li><a href="#">회원가입</a></li>
+					<li><a href="#">마이페이지</a></li>
+					<li><a href="#">고객센터</a></li>
+				</ul>
+			</nav>		
+			<div class="search">
+	
+				<span><a href="#">search</a></span>
+				<input type="text" name="search" id="search" size="12">
+			</div>
+			<div class="icon">
+				<ul>
+					<li><a href="#" title="세일상품">sale</a></li>
+					<li><a href="#" title="장바구니">cart</a></li>
+					<li><a href="#" title="위시리스트">wishlist</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<div id="quick">
+		<div>
+			<ul>
+				<li><a href="#"><img src="shopping_img/quick_coupon.png" alt="coupon"></a></li>
+				<li><a href="#"><img src="shopping_img/quick_notice.png" alt="notice"></a></li>
+				<li><a href="#"><img src="shopping_img/quick_event.png" alt="event"></a></li>
+				<li><a href="#"><img src="shopping_img/quick_center.png" alt="customer center"></a></li>
+			</ul>
+		</div>	
+	</div>
+	<nav class="nav">
+		<ul>
+			<li>
+				<a href="#">디자인문구</a>
+				<div class="sub">
+					<ul>
+						<li><a href="#">다이어리/플래너</a></li>
+						<li><a href="#">노트/메모</a></li>
+						<li><a href="#">캐릭터 문구</a></li>
+						<li><a href="#">아이디어 상품</a></li>
+						<li><a href="#">카드/봉투/편지</a></li>
+						<li><a href="#">문구세트</a></li>
+						<li><a href="#">필통/파우치</a></li>
+					</ul>
+				</div>
+			</li>			
+			<li>
+				<a href="#">디지털/가전</a>
+				<div class="sub">
+					<ul>
+						<li><a href="#">아이폰 케이스</a></li>
+						<li><a href="#">갤럭시/LG 케이스</a></li>
+						<li><a href="#">주변기기</a></li>
+						<li><a href="#">카메라</a></li>
+						<li><a href="#">외장하드/USB</a></li>
+						<li><a href="#">필름/스킨</a></li>
+					</ul>
+				</div>
+			</li>
+			<li>
+				<a href="#">키덜트/취미</a>
+				<div class="sub">
+					<ul>
+						<li><a href="#">피규어</a></li>
+						<li><a href="#">게임/보드게임</a></li>
+						<li><a href="#">아트토이</a></li>
+						<li><a href="#">케이스/진열장</a></li>
+					</ul>
+				</div>
+			</li>
+			<li>
+				<a href="#">주방/가구</a>
+				<div class="sub">
+					<ul>
+						<li><a href="#">주방식기</a></li>
+						<li><a href="#">수저</a></li>
+						<li><a href="#">조리도구/기구</a></li>
+						<li><a href="#">주방패브릭</a></li>
+						<li><a href="#">욕실용품</a></li>
+						<li><a href="#">주방용품</a></li>
+					</ul>
+				</div>
+			</li>
+			<li>
+				<a href="#">인테리어</a>
+				<div class="sub">
+					<ul>
+						<li><a href="#">조명</a></li>
+						<li><a href="#">액자/홈갤러리</a></li>
+						<li><a href="#">디퓨져/캔들</a></li>
+						<li><a href="#">인테리어 소품</a></li>
+					</ul>
+				</div>
+			</li>
+			<li>
+				<a href="#">유아/키즈</a>
+				<div class="sub">
+					<ul>
+						<li><a href="#">베이비패션</a></li>
+						<li><a href="#">키즈잡화</a></li>
+						<li><a href="#">출산선물</a></li>
+						<li><a href="#">임산부패션</a></li>
+						<li><a href="#">교구/완구</a></li>
+					</ul>
+				</div>
+			</li>
+			<li>
+				<a href="#">패션/잡화</a>
+				<div class="sub">
+					<ul>
+						<li><a href="#">상의</a></li>
+						<li><a href="#">하의</a></li>
+						<li><a href="#">홈웨</a></li>
+						<li><a href="#">이너웨어</a></li>
+						<li><a href="#">비치웨어</a></li>
+						<li><a href="#">트레이닝</a></li>
+					</ul>
+				</div>
+			</li>
+			<li>
+				<a href="#">반려동물/펫</a>
+				<div class="sub">
+					<ul>
+						<li><a href="#">패션</a></li>
+						<li><a href="#">하우스</a></li>
+						<li><a href="#">푸드</a></li>
+						<li><a href="#">위생용품</a></li>
+						<li><a href="#">장난감</a></li>
+						<li><a href="#">고양이 전용</a></li>
+						<li><a href="#">강아지 전용</a></li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+		<div class="gnb_bg"></div>
+	</nav>	
+	<section id="main_banner">
+		<ul class="banner">
+			<li><a href="#"><img src="shopping_img/slide_banner_1.jpg" alt="mask x fashion PITTA"></a></li>
+			<li><a href="#"><img src="shopping_img/slide_banner_2.jpg" alt="국산 필기구 자존심 동아연필/모나미/자바 전상품 한눈에 보기"></a></li>
+			<li><a href="#"><img src="shopping_img/slide_banner_3.jpg" alt="명작 시리즈 빈센트 반 고흐 인테리어가 되다"></a></li>
+		</ul>		
+	</section>
+<div id="container_wrap">
+		<div class="new_item">
+		<h2>신상품<br><span>NEW ITEM</span></h2>
+			<div class="img">
+				<div class="left">
+					<a href="#"><img src="shopping_img/new_1.png" alt="톰과제리 네온 젤리 케이스"></a>
+				</div>
+				<div class="right1">
+					<ul>
+						<li><a href="#">
+						<img src="shopping_img/new_2.png" alt="PANTONE 노트북"></a>
+						</li>
+						<li>
+						<a href="#">
+						<img src="shopping_img/new_3.png" alt="티타늄 골드가위"></a>
+						</li>
+					</ul>
+				</div>
+				<div class="right2">
+					<ul>
+						<li>
+						<a href="#">
+						<img src="shopping_img/new_4.png" alt="탑 데스크 오거나이져"></a>
+						</li>
+						<li><a href="#">
+						<img src="shopping_img/new_5.png" alt="아이코닉 허밍 키홀더 v3"></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="hit_item">
+			<h2>인기상품<br><span>HIT ITEM</span></h2>
+			<nav class="inb">
+				<ul>
+					<li><a href="#">전체</a></li>
+					<li><a href="#">디자인문구</a></li>
+					<li><a href="#">디지털/가전</a></li>
+					<li><a href="#">키덜트/취미</a></li>
+					<li><a href="#">주방/가구</a></li>
+					<li><a href="#">인테리어</a></li>
+					<li><a href="#">유아/키즈</a></li>
+					<li><a href="#">패션/잡화</a></li>
+					<li><a href="#">반려동물/펫</a></li>
+				</ul>
+			</nav>	
+			<div class="item_wrap">
+				<ul class="img">
+					<li class="hit1">
+						<div><a href="#">마블 클립 디스펜서</a></div>
+						<div><a href="#"><img src="shopping_img/hit_1.jpg" alt="마블 클립 디스펜서"></a></div>
+					</li>
+					<li class="hit2">
+						<div><a href="#">로즈 골드 테이프 디스펜서</a></div>
+						<div><a href="#"><img src="shopping_img/hit_2.jpg" alt="로즈 골드 테이프 디스펜서"></a></div>
+					</li>
+					<li class="hit3">
+						<div><a href="#">쇼미더 머니 플래너 빅사이즈</a></div>
+						<div><a href="#"><img src="shopping_img/hit_3.jpg" alt="쇼미더 머니 플래너 빅사이즈"></a></div>
+					</li>
+					<li class="hit4">
+						<div><a href="#">카카오 프렌즈 리틀 프렌즈 연필캡</a></div>
+						<div><a href="#"><img src="shopping_img/hit_4.jpg" alt="카카오 프렌즈 리틀 프렌즈 연필캡"></a></div>
+					</li>
+					<li class="hit5">
+						<div><a href="#">리훈 리무버블스티커</a></div>
+						<div><a href="#"><img src="shopping_img/hit_5.jpg" alt="리훈 리무버블스티커"></a></div>
+					</li>
+					<li class="hit6">
+						<div><a href="#">멀티 캔 가습기 무드등</a></div>
+						<div><a href="#"><img src="shopping_img/hit_6.jpg" alt="멀티 캔 가습기 무드등/USB가습기/미니가습기/휴대용/차량용"></a></div>
+					</li>
+					<li class="hit7">
+						<div><a href="#">코쿠요 슈퍼마리오 캠퍼스 노트 한정판</a></div>
+						<div><a href="#"><img src="shopping_img/hit_7.jpg" alt="코쿠요 슈퍼마리오 캠퍼스 노트 한정판"></a></div>
+					</li>
+					<li class="hit8">
+						<div><a href="#">덜튼 메탈 아연도금 알류미늄 클립보드 A4</a></div>
+						<div><a href="#"><img src="shopping_img/hit_8.jpg" alt="덜튼 메탈 아연도금 알류미늄 인테리어 소품 클립보드 A4"></a></div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="brand">
+		<h2>브랜드<br><span>BRAND</span></h2>
+		<div class="product_wrap">
+			<ul>
+				<li>
+					<figure> 
+					<a href="#"><img src="shopping_img/brand_1.jpg" alt="파버 카스텔"></a>
+						<figcaption>
+							<p>
+								<span class="name">독일의 대표 문구 회사</span>
+							</p>
+							<p>
+								<span>FABER-CASTELL</span>
+							</p>
+						</figcaption>
+					</figure>
+				</li>
+				<li>
+					<figure>
+					<a href="#"><img src="shopping_img/brand_2.jpg" alt="모나미"></a>
+						<figcaption>
+							<p>
+								<span class="name">60년 역사의 대한민국 문구류 1세대</span>
+							</p>
+							<p>
+								<span>MONAMI</span>
+							</p>
+						</figcaption>
+					</figure>
+				</li>
+				<li>
+					<figure>
+					<a href="#"><img src="shopping_img/brand_3.jpg" alt="액토"></a>
+						<figcaption>
+							<p>
+								<span class="name">혁신적인 컴퓨터 주변기기의 대가</span>
+							</p>
+							<p>
+								<span>ACTTO</span>
+							</p>
+						</figcaption>
+					</figure>
+				</li>
+				<li>
+					<figure>
+					<a href="#"><img src="shopping_img/brand_4.jpg" alt="카카오 프렌즈"></a>
+						<figcaption>
+							<p>
+								<span class="name">일상 속 즐거운 카카오 대표 마스코트</span>
+							</p>
+							<p>
+								<span>KAKAO FRIENDS</span>
+							</p>
+						</figcaption>
+					</figure>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="md_pick">
+		<h2>MD 추천<br><span>MD CHOICE</span></h2>
+		<nav class="inb2">
+			<ul>
+				<li><a href="#">파카 필기류</a></li>
+				<li><a href="#">한글 웃긴 셔츠</a></li>
+				<li><a href="#">메이드웰케이스</a></li>
+				<li><a href="#">아이디어 상품</a></li>
+				<li><a href="#">데일리삭스</a></li>
+				<li><a href="#">반프레스토특집</a></li>
+			</ul>
+		</nav>			
+	</div>
+	<section id="sub_banner">
+		<div class="slide">
+			<div class="big_v">
+			 	<div>		
+					<a href="#"><span>파카 조터 프리미엄 다이애그널 CT 볼펜 (2color)선택</span>
+					<div><del>35,000</del>
+					<br>24,413원 [30%]</div></a>
+				</div>	
+				<div>
+					<span>
+						<a href="#"><img src="shopping_img/md_li_1.png" alt="파카 조터 프리미엄 다이애그널 CT 볼펜 (2color)선택"></a>
+					<span>
+				</div>	
+			</div>
+			<div class="small_v_1">
+				<ul>
+					<li class="s1">
+						<div>
+							<a href="#"><span>파카 뉴소네트2 스텐스틸 CT 만년필</span>
+							<div><del>150,000</del>
+							<br>104,625원 [30%]</div></a>
+						</div>
+						<div>
+							<a href="#"><img src="shopping_img/md_li_2.png" alt="파카 뉴소네트2 스텐스틸 CT 만년필"></a>
+						</div>
+					</li>
+					<li class="s2">
+						<div>
+							<a href="#"><span>파카 뉴소네트2 스텐금장 GT 만년필</span>
+							<div><del>170,000</del>
+							<br>118,575원 [30%]</div></a>
+						</div>
+						<div>
+							<a href="#"><img src="shopping_img/md_li_3.png" alt="파카 뉴소네트2 스텐금장 GT 만년필"></a>
+						</div>
+					</li>
+					<li class="s3">
+						<div>
+							<a href="#"><span>파카 소네트N-서틀 블루 슬림 CT 볼펜</span>
+							<div><del>160,000</del>
+							<br>111,600원 [30%]</div></a>
+						</div>
+						<div>
+							<a href="#"><img src="shopping_img/md_li_4.png" alt="파카 소네트N - 서틀 블루 슬림 CT 볼펜"></a>
+						</div>
+					</li>
+					<li class="s4">
+						<div>
+							<a href="#"><span>파카 뉴벡터 스텐레스 스틸 CT 만년필</span>
+							<div><del>40,000</del>
+							<br>30,000원 [25%]</div></a>
+						</div>
+						<div>
+							<a href="#"><img src="shopping_img/md_li_5.png" alt="파카 뉴 벡터 스탠다드 스텐레스 스틸 CT 만년필"></a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<div class="event">
+		<h2>이벤트<br><span>EVENT</span></h2>
+		<ul>
+			<li><a href="#"><img src="shopping_img/register.png" alt="회원가입 EVENT"></a></li>
+			<li><a href="#"><img src="shopping_img/event.png" alt="8월 이벤트"></a></li>
+		</ul>
+	</div>
+</div>
+<footer id="main_footer">
+	<div class="footer1">
+			<div class="center">
+			<h3>CUSTOMER CENTER</h3>
+			<ul>
+				<li><img src="shopping_img/ico_tel.gif" alt="tel">02-2275-1500</li>
+				<li>월-금 : 오전09:00~오후05:30 / 토 : 오전09:00~오후03:00</li>
+				<li>일요일, 공유일 휴무</li>
+			</ul>
+			</div>
+			<div class="bank">
+			<h3>BANK INFO</h3>
+				<ul>
+					<li>국민은행 299601-01-028417</li>
+					<li>신한은행 953-01-008381</li>
+					<li>우리은행 1002-034-156158</li>
+					<li>농협중앙회 027-12-220408</li>
+					<li>예금주 박경서</li>
+				</ul>
+			</div>
+			<div class="info">
+				<ul>
+					<li><a href="#">회사소개</a></li>
+					<li><a href="#">이용약관</a></li>
+					<li><a href="#">개인정보처리방침</a></li>
+					<li><a href="#">이용안내</a></li>
+					<li><a href="#">고객센터</a></li>
+				</ul>
+			</div>
+	</div>
+		<div class="footer2">
+			<div class="address">
+				<address>
+				<p>법인명(상호) : 승진문구유통 대표자(성명) : 박경서 </p>
+				<p>사업자 등록번호 안내 : [101-04-85580] 통신판매업 신고 종로 제01-3678호 [사업자정보확인] </p>
+				<p>전화 : 02-2275-1500 팩스 : 02-2274-7733 주소 : 110110 서울 종로구 종로5가 193-6호 승진B/D 1F 승진문구유통(문구랜드)</p>
+				<p>개인정보보호책임자 : 권혁빈(chriss731&#64;naver.com)</p>
+				<p>Copyright &#169; 2017 문구랜드. All rights reserved.</p>
+				</address>
+			</div>
+			<div class="sns">
+				<ul>
+					<li><a href="#">facebook</a></li>
+					<li><a href="#">twitter</a></li>
+					<li><a href="#">instagram</a></li>
+				</ul>
+			</div>
+		</div>
+</footer>
+</body>
+</html>

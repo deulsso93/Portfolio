@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+
+html,body,div,span,h1,h2,h3,h4,h5,h6,p,
+blockquote,q,abbr,address,cite,code,img,
+ul,ol,li,dl,dt,dd,a,sub,sup,strong,em,
+header,section,article,footer,aside,nav{margin: 0; padding: 0; border: 0;}
+
+a {text-decoration: none;}
+header,section,article,footer,aside,nav{display: block;}
+
+hr{display:none;}
+
+ul,ol,li{list-style: none;}
+
+
+address,em{font-style:normal; font-weight:400;}
+q{quotes:none;}
+
+
+
+.text-center{height: 100px;line-height: 100px; text-align: center;}
+
+.clearfix{*zoom:1}
+.clearfix:after{
+  display: block;
+  clear: both;
+  content: '';
+}

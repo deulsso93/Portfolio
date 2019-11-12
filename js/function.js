@@ -136,7 +136,7 @@ $(function(){
 		evt.preventDefault();
 		
 		$lightbox.children('img').attr({
-			src:'../../MUNGU-LAND/plan/muguland_plan.jpg',
+			src:'./MUNGU-LAND/plan/muguland_plan.jpg',
 			alt:'문구랜드 기획안'
 		});
 		$('div.shadow').show();
@@ -147,7 +147,7 @@ $(function(){
 		evt.preventDefault();
 		
 		$lightbox.children('img').attr({
-			src:'../../ONEPAGE/plan/onepage_plan.gif',
+			src:'./ONEPAGE/plan/onepage_plan.gif',
 			alt:'원페이지 FOOLS GARDEN기획안'
 		});
 		$('div.shadow').show();
