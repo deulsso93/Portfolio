@@ -143,7 +143,8 @@ h2.sub_main{text-align: center; padding: 10px 0;}
 
 /*라이트박스*/
 div.lightbox{
-	display: none;position: fixed; z-index: 1000;  left: 50%; top: 50%; width: 1000px; height:800px; overflow: auto; margin: -450px 0 0; margin-left: -500px;}
+	display: none;position: fixed; z-index: 1000;  left: 50%; top: 50%; width: 1000px; height:800px; overflow: scroll; margin: -450px 0 0; margin-left: -500px;}
+div.lightbox>.close{position: absolute;text-indent: -9999px;}
 div.lightbox>img{display: block; width: 100%;}
 div.shadow{display: none; position: fixed;  z-index: 999; left: 0; top: 0; width: 100%; height: 100%; background-color: #000; opacity: 0.55;}
 
