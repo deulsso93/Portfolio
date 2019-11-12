@@ -22,22 +22,16 @@
 	<div id="wrap">
 		<header>
 				<div class="home" data-stellar-background-ratio="0.1"><!--메인화면-->
-				<div class="home_container">
-					<div class="home_title">
-						<h2 class="wow fadeInUp"><span>I</span>AM</h2>
-						<div class="logo wow bounceIn" data-wow-delay="600ms">조현주의 로고</div>
-						<p class="wow fadeInUp">신입 웹퍼블리셔</p>
-						<p class="wow fadeInUp">조현주</p>
-						<p class="wow fadeInUp">Portfolio</p>	
-					</div>	
-					<div class="home_shortcut home_project wow fadeInUp" data-wow-delay="400ms">
-							<a href="./Portfolio-Design_concept_CHJ.pdf" target="_blank" class="ico">바로가기아이콘</a>
-							<p>portfolio project pdf</p>
-					</div>					
+					<div class="home_container">
+						<div class="home_title">
+							<h2 class="wow fadeInUp"><span>I</span>AM</h2>
+							<div class="logo wow bounceIn" data-wow-delay="600ms">조현주의 로고</div>
+							<p class="wow fadeInUp">신입 웹퍼블리셔</p>
+							<p class="wow fadeInUp">조현주</p>
+							<p class="wow fadeInUp">Portfolio</p>	
+						</div>					
 					</div>
-
-				</div>				
-						
+				</div>					
 				<div class="header_container"><!--네비게이션 바-->
 					<h3 class="sr-only">주요메뉴</h3>
 					<h1><a href="./index.html">HYUNJU CHO</a></h1>
@@ -129,11 +123,17 @@
 				</ol>
 				<a href="../sub_story/sub_story.html" target="_blank" class="go wow swing" data-wow-delay="400ms">보러가기</a>
 			</div>
-		</section>		
+		</section>	
+		<div class="shadow"></div>				
+		<div class="lightbox">
+			<img src="#" alt="#">
+			<a class="close">닫기</a>
+		</div>	
 		<section class="portfolio">
 			<h2 class="main">Portfolio</h2>
 				<article class="portfolio_slides wow fadeInUp">
 				<h2 class="sub_main">Website</h2>
+
 					<ul class="portfolio_slides-container clearfix">
 						<li>
 							<div class="portfolio_img">문구랜드</div>
@@ -146,8 +146,9 @@
 								<p>
 									사용툴 : Adobe Photoshop,EditPlus					
 								</p>
-								<button class="web">WEB</button>
-								<button class="progress">기획안</button>
+								<a href="../../MUNGU-LAND/index.html" class="web">WEB</a>
+								<a href="#"
+								 class="progress progress1">기획안</a>
 							</div>
 						</li>
 						<li>
@@ -162,7 +163,8 @@
 								<p>
 									사용툴 : Adobe Photoshop,Brackets					
 								</p>
-								<button class="web">WEB</button>
+								<a href="../../line/index.html"
+								 class="web">WEB</a>
 							</div>							
 						</li>
 						<li>
@@ -171,13 +173,12 @@
 								<h2>기업사이트「삼표」</h2>
 								<p>
 									기존 사이트의 Footer 내의 메뉴바의 불편함을 
-									개선하고자, <br /> 부분 리뉴얼방식으로 카피사이트를 
-									새롭게 제작해보았습니다.									
+									개선하고자, <br /> 부분 리뉴얼방식으로 카피해보았습니다.
 								</p>
 								<p>
 									사용툴 : Adobe Photoshop,Visual Studio Code
 								</p>
-								<button class="web">WEB</button>
+								<a href="../../SAMPYO/index.html" class="web">WEB</a>
 							</div>							
 						</li>
 						<li>
@@ -194,12 +195,12 @@
 								<p>
 									상업적 리뉴얼이 아닌 개인 리뉴얼작업입니다. <br />공식 사이트와는 관련없습니다.
 								</p>
-								<button class="web">WEB</button>
-								<button class="progress">기획안</button>
+								<a href="../../KAKAO_renewel/index.html"class="web">WEB</a>
+								<a href="#" class="progress progress2">기획안</a>
 							</div>							
 						</li>
 						<li>
-							<div class="portfolio_img">원페이지</div>
+							<div class="portfolio_img"></div>
 							<div class="portfolio_txt">
 								<h2>원페이지「FOOLS GARDEN」</h2>
 								<p>
@@ -210,10 +211,24 @@
 								<p>
 									사용툴 : Adobe Photoshop,Brackets									
 								</p>
-								<button class="web">WEB</button>
-								<button class="progress">기획안</button>
+								<a href="../../ONEPAGE/plan/onepage_plan.gif" class="web">WEB</a>
+								<a a href="#" class="progress progress3">기획안</a>
 							</div>							
 						</li>
+						<li>
+							<div class="portfolio_img">닌텐도-반응형</div>
+							<div class="portfolio_txt">
+								<h2>반응형「NINTENDO」</h2>
+								<p>
+									브라우저 창 크기에 따른 반응형 페이지를 이해하고,<br />
+									스스로 js및 플러그인의 적절한 사용을 하며 카피해보았습니다.
+								</p>
+								<p>
+									사용툴 : Adobe Photoshop,Brackets									
+								</p>
+								<a href="../../NINTENDO_RESPONSIVE/index.html" class="web">WEB</a>
+							</div>							
+						</li>												
 					</ul>
 					<ol class="portfolio-pagination">
 						<li class="on"><a href="#">문구랜드</a></li>
@@ -221,6 +236,7 @@
 						<li><a href="#">삼표</a></li>
 						<li><a href="#">KAKAO</a></li>
 						<li><a href="#">원페이지</a></li>
+						<li><a href="#">NINTENDO</a></li>
 					</ol>					
 				</article>
 				<div class="portfolio-grid-wrap">
@@ -259,9 +275,14 @@
 				</div>
 		</section>
 		<section class="contact">
-			<h2 class="main">Contact</h2>
+			<h2 class="main">Contact</h2>	
+			<div class="home_project wow fadeInUp" data-wow-delay="400ms">
+					<a href="./Portfolio-Design_concept_CHJ.pdf" target="_blank" class="ico">바로가기아이콘</a>
+					<p>portfolio project pdf</p>
+			</div>				
 			<div class="contact_profile clearfix">
 				<div class="contact_profile_img wow fadeIn" data-wow-delay="400ms">조현주 캐릭터 이미지</div>
+				
 				<ol class="contact_info">
 					<li class="wow fadeInRight">
 						<p class="contact_ico">email</p>

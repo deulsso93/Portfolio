@@ -15,26 +15,12 @@ header>.home>.home_container{position: relative; width: 100%; height: 100%; marg
 header>.home>.home_container>.home_title{position: absolute; top: 120px; left: 50%; margin-left: -150px;width: 300px; height: 512px;}
 header>.home>.home_container>.home_title>h2{color: #fff;font-size: 48px;font-family: 'Oswald',sans-serif; text-align: center;}
 header>.home>.home_container>.home_title>h2>span{color: #ff4a4a; padding-right: 10px;}
-header>.home>.home_container>.home_title>.logo{width: 297px;height: 297px;text-indent: -9999px; background-image: url(../images/main_logo.png); background-repeat: no-repeat;margin: 20px 0 10px;}
+header>.home>.home_container>.home_title>.logo{width: 297px;height: 297px;text-indent: -9999px; background-image: url(../images/main_logo.png); background-repeat: no-repeat;margin: 25px 0 15px;}
 header>.home>.home_container>.home_title>p{color: #fff;text-align: center; line-height: 1.2; font-size: 30px; font-weight: 400; }
-header>.home>.home_container>.home_title>p:nth-of-type(2):after{display: block;width: 294px; height: 2px; margin: 5px 0;border: 2px solid #fff;content: '';}
+header>.home>.home_container>.home_title>p:nth-of-type(2):after{display: block;width: 294px; height: 2px; margin: 10px 0;border: 2px solid #fff;content: '';}
 
 
-/*Main - 메인 project 클릭*/
-header>.home>.home_container>.home_shortcut{position: absolute; bottom: 250px; left: 50%;}
 
-/*아이콘 animate*/
-@keyframes icomoving{
-	0%{top: -10px;}
-	50%{top: 0px;}
-	100%{top: -10px;}
-}
-
-header>.home>.home_container>.home_shortcut>.ico{
-	animation:icomoving 1.5s linear infinite;
-	position: absolute; top: 0;display: block; width: 54px;height: 54px; margin-left: -27px;text-indent: -9999px; background-image: url(../images/main_project.png);}
-header>.home>.home_container>.home_shortcut>.ico:hover{background-position: 0 -54px;}
-header>.home>.home_container>.home_shortcut>p{position: absolute; top: -27px; left: 22px;width: 121px;height: 58px; text-indent: -9999px; background-image: url(../images/main_project_txt.png);}
 
 
 /*navigation bar*/
@@ -155,11 +141,19 @@ h2.sub_main{text-align: center; padding: 10px 0;}
 .story>.story_home>.story_info>li{color: #fff;font-size: 44px; text-shadow: 2px 2px 2px rgba(0,0,0,0.4);}
 .story>.story_home>.go{display: block;position: absolute; top: 450px; left: 50%; width: 150px; height: 65px; margin-left: -75px; color: #fff; font-size:22px; font-weight: 100; text-align: center; line-height: 65px;background-color: #454545; }
 
+/*라이트박스*/
+div.lightbox{
+	display: none;position: fixed; z-index: 1000;  left: 50%; top: 50%; width: 1000px; height: 1000px; overflow: auto; margin: -450px 0 0; margin-left: -500px;}
+div.lightbox>img{display: block; width: 100%;}
+div.shadow{display: none; position: fixed;  z-index: 20; left: 0; top: 0; width: 100%; height: 100%; background-color: #000; opacity: 0.55;}
+
+
 /*section.portfolio_web - 슬라이드*/
 .portfolio{width: 1200px;margin: 0 auto;}
 .portfolio>.portfolio_slides{position: relative; top: 50px;overflow: hidden; height: 500px;}
 .portfolio>.portfolio_slides>h2{padding: 0;}
-.portfolio>.portfolio_slides>.portfolio_slides-container{position: absolute; left: 0; top: 0px; width: 6000px; height: 450px;}
+
+.portfolio>.portfolio_slides>.portfolio_slides-container{position: absolute; left: 0; top: 0px; width: 7200px; height: 450px;}
 .portfolio>.portfolio_slides>.portfolio_slides-container>li{float: left; width: 1200px;padding-top: 50px;}
 .portfolio>.portfolio_slides>.portfolio_slides-container>li>.portfolio_img{float: left;width: 652px; height: 395px; text-indent: -9999px;}
 .portfolio>.portfolio_slides>.portfolio_slides-container>li:nth-of-type(1)>.portfolio_img{ background-image: url(../images/portfolio_page_1.png);}
@@ -167,17 +161,20 @@ h2.sub_main{text-align: center; padding: 10px 0;}
 .portfolio>.portfolio_slides>.portfolio_slides-container>li:nth-of-type(3)>.portfolio_img{ background-image: url(../images/portfolio_page_3.png);}
 .portfolio>.portfolio_slides>.portfolio_slides-container>li:nth-of-type(4)>.portfolio_img{ background-image: url(../images/portfolio_page_4.png);}
 .portfolio>.portfolio_slides>.portfolio_slides-container>li:nth-of-type(5)>.portfolio_img{ background-image: url(../images/portfolio_page_5.png);}
+.portfolio>.portfolio_slides>.portfolio_slides-container>li:nth-of-type(6)>.portfolio_img{ background-image: url(../images/portfolio_page_6.png);}
 .portfolio>.portfolio_slides>.portfolio_slides-container>li>.portfolio_txt{float: left;width: 548px; height: 400px;}
 .portfolio>.portfolio_slides>.portfolio_slides-container>li>.portfolio_txt>h2{font-size: 28px; font-weight: 700;}
 .portfolio>.portfolio_slides>.portfolio_slides-container>li>.portfolio_txt>p{font-size: 18px; font-weight: 100; padding: 15px 0; line-height: 1.2;}
 .portfolio>.portfolio_slides>.portfolio_slides-container>li:nth-of-type(4)>.portfolio_txt>p:last-of-type{text-decoration: underline;}
-.portfolio>.portfolio_slides>.portfolio_slides-container>li>.portfolio_txt>button{border: none;background-color: none; outline: none; width: 223px; height: 62px; margin-top: 70px;margin-left: 10px; font-size: 20px; font-weight: 100; line-height: 62px;border: 1px solid #828282;background-color: #fff; transition:all 0.4s;}
-.portfolio>.portfolio_slides>.portfolio_slides-container>li:nth-of-type(4)>.portfolio_txt>button{margin-top: 40px;}
+.portfolio>.portfolio_slides>.portfolio_slides-container>li>.portfolio_txt>a{display: inline-block; width: 223px; height: 62px; margin-top: 70px;margin-left: 10px; font-size: 20px; font-weight: 100; text-align: center;line-height: 62px;border: 1px solid #828282;background-color: #fff; cursor: pointer; transition:all 0.4s;}
+
+/*section.portfolio_web - 버튼*/
+.portfolio>.portfolio_slides>.portfolio_slides-container>li:nth-of-type(4)>.portfolio_txt>a{margin-top: 50px;}
 .portfolio>.portfolio_slides>.portfolio_slides-container>li>.portfolio_txt>.web{margin-left: 0;}
-.portfolio>.portfolio_slides>.portfolio_slides-container>li>.portfolio_txt>button:hover{color: #fff;background-color: #ff4a4a; border:1px solid #ff4a4a;}
+.portfolio>.portfolio_slides>.portfolio_slides-container>li>.portfolio_txt>a:hover{color: #fff;background-color: #ff4a4a; border:1px solid #ff4a4a;}
 
 /*section.portfolio_web - pagination*/
-.portfolio>.portfolio_slides>.portfolio-pagination{display: flex; justify-content: space-between; position: absolute; z-index: 200;left: 50%; bottom: 0px; margin-left: -243px;}
+.portfolio>.portfolio_slides>.portfolio-pagination{display: flex; justify-content: space-between; position: absolute; z-index: 200;left: 50%; bottom: 0px; margin-left: -319px;}
 .portfolio>.portfolio_slides>.portfolio-pagination>li:before{width: 100%; height: 100%; padding: 0 15px; color: #848484;content: '|';}
 .portfolio>.portfolio_slides>.portfolio-pagination>li:first-child:before{display: none;}
 .portfolio>.portfolio_slides>.portfolio-pagination>li{font-size: 24px; font-weight: 100; line-height: 1;}
@@ -196,8 +193,25 @@ h2.sub_main{text-align: center; padding: 10px 0;}
 
 
 /*section.contact*/
-.contact{height:600px;}
+.contact{position: relative;height:600px;}
 .contact>h2.main{top: 50px;}
+
+/*Main - 메인 project 클릭*/
+.contact>.home_project{position: absolute; top: 50%; margin-top: 15px;left: 38%;}
+
+/*아이콘 animate*/
+@keyframes icomoving{
+	0%{top: -10px;}
+	50%{top: 0px;}
+	100%{top: -10px;}
+}
+
+.contact>.home_project>.ico{
+	animation:icomoving 1.5s linear infinite;
+	position: absolute; top: 0;display: block; width: 54px;height: 54px; margin-left: -27px;text-indent: -9999px; background-image: url(../images/main_project.png);}
+.contact>.home_project>.ico:hover{background-position: 0 -54px;}
+.contact>.home_project>p{position: absolute; top: -27px; left: 22px;width: 121px;height: 58px; text-indent: -9999px; background-image: url(../images/main_project_txt.png);}
+
 .contact>.contact_profile{position: relative;width: 1200px;  margin: 0 auto; padding-top: 200px;}
 .contact>.contact_profile>.contact_profile_img{position: absolute;float: left;width: 315px; height: 315px; background-image: url(../images/contact_profill.png);background-repeat: no-repeat;text-indent: -9999px;}
 .contact>.contact_profile>.contact_info{position: absolute; right: 0;width: 550px; height: 300px;}

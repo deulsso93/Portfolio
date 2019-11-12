@@ -125,6 +125,43 @@ $(function(){
 
 	
 	$('.story').height($(window).height()); //story 높이
+	
+	
+	
+	//기획안 lightbox
+	
+	var $lightbox=$('.lightbox');
+	
+	$('a.progress1').on('click',function(evt){
+		evt.preventDefault();
 		
+		$lightbox.children('img').attr({
+			src:'../../MUNGU-LAND/plan/muguland_plan.jpg',
+			alt:'문구랜드 기획안'
+		});
+		$('div.shadow').show();
+		$('div.shadow').next().show();
+		
+	});
+	$('a.progress3').on('click',function(evt){
+		evt.preventDefault();
+		
+		$lightbox.children('img').attr({
+			src:'../../ONEPAGE/plan/onepage_plan.gif',
+			alt:'원페이지 FOOLS GARDEN기획안'
+		});
+		$('div.shadow').show();
+		$('div.shadow').next().show();
+		
+	});	
+	
+	//닫힘
+	$('div.shadow').on('click',function(){
+			$lightbox.hide();
+			$lightbox.prev().hide();
+		
+	});
+	
+	
 });	
 
