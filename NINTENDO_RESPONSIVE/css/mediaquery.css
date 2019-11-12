@@ -29,8 +29,6 @@
 	header>.btn_mnu>.btn-search:after{background: none;}	
 	
 	
-	/*슬라이드 버튼*/
-	#slides>.owl-prev,#slides>.owl-next{top: 35%;}
 	
 	
 	/*article*/
@@ -47,6 +45,9 @@
 	article>.contents>li>.context>.sub_tit,
 	article>.contents>li>.context .sub_tit{font-size: 12px;}	
 	article>.contents>li>.context>p:first-of-type{height: 50px;font-size: 14px;}
+	
+	
+	article.new-updates>.more{display: none;}
 	
 	/*article - game-list */
 	article>.contents>li>.context>p:last-of-type{display: none;}
