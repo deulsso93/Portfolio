@@ -1,0 +1,63 @@
+@charset "utf-8";
+/*noto sans 300 (light)*/
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,700&display=swap&subset=korean');
+
+
+/*bgcolor dd8b46*/
+
+body{font-family: 'Noto Sans KR','Malgun Gothic','맑은 고딕','Apple SD Gothic Neo','돋움',dotum, sans-serif; color: #1e1e1e;}
+
+::selection{background-color:rgba(255,238,51,0.99);}
+
+/*공통*/
+#wrap,header,secition,footer{width: 100%;}
+header>.main,section>article{position: relative;width: 1200px; margin: 0 auto;}
+
+/*animation*/
+
+@keyframes rotate{
+	0%{transform:rotate(0deg);}
+	50%{transform:rotate(180deg);}
+	100%{transform:rotate(360deg);}
+}
+
+header>div.main:after{
+	animation:rotate 20s linear infinite;
+	position: absolute; z-index: 1; top: 50px;left: 50%; margin-left: -180px;display: block; width: 642px; height: 642px; background-image: url(../images/main_bg.png); content: '';}
+
+/*header*/
+header{height: 750px;}
+
+header>.main>.main_logo{position: absolute; z-index: 1000;left: 40px; top: 100px;}
+header>.main>.main_logo>img{display: block; width: 531px; height: 66px;transform:rotate(8deg); }
+header>.main>.main_mascot{position: absolute;z-index: 1000;left: 50%; margin-left: -319px; top: 200px;}
+
+
+/*section*/
+section{position: relative;height: 1070px; background-color: #dd8b46;}
+section:before{position: absolute; left: 0; top: 0; width: 100%; height: 48px; background-image: url(../images/bg_deco.png); content: '';}
+
+section>article>.game{position: relative; left: 50%; top: 80px;width: 800px; height: 914px; margin-left: -400px;background-image: url(../images/game_bg.jpg);}
+section>article>.game>h2{position: absolute;top: 0; left: 50%;width:650px; height: 41px; margin-left: -325px;background-image: url(../images/status.png);text-align: center;}
+section>article>.game>h2>span{display: inline-block;padding-top: 5px;}
+
+section>article>.game>.part{position: absolute; z-index: 800;left: 0;width: 100%; height: 125px; background-image: url(../images/game_bg_cover.png);}
+section>article>.game>.part1{top: 187px;}
+section>article>.game>.part2{top: 442px;}
+section>article>.game>.part3{top: 695px;}
+
+/*x - 70 320 570 (250)*/
+/*y - 80 330 580 (250)*/
+section>article>.game>.frame{display: none; position: absolute; z-index: 700; left:70px; top: 80px;width: 160px;}
+section>article>.game>.frame>img{display: block; width: 100%;}
+section>article>.game>button{background: none; outline: none; border: none; position: absolute; bottom: 10px; left: 20px; width: 235px; height: 64px; background-image: url(../images/btn_start.png); text-indent: -9999px; cursor: pointer;}
+section>article>.game>.score{position: absolute; right: 10px; bottom: 10px; color: #fff;font-size: 60px; font-weight: 700; }
+
+
+
+
+
+/*footer*/
+
+footer{height: 50px; text-align: center; border-top: 1px solid #fff; background-color: #dd8b46;}
+footer>address{line-height: 50px; color: #fff; font-size: 15px; font-weight: 700;}
