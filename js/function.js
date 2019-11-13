@@ -166,7 +166,17 @@ $(function(){
 		$('div.shadow').next().show();
 		
 	});	
-	
+	$('a.progress4').on('click',function(evt){
+		evt.preventDefault();
+		
+		$lightbox.children('img').attr({
+			src:'./Game/plan/game_plan.jpg',
+			alt:'두더지 게임 시안'
+		});
+		$('div.shadow').show();
+		$('div.shadow').next().show();
+		
+	});			
 	//닫힘
 	$('div.shadow').on('click',function(){
 			$lightbox.hide();

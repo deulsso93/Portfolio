@@ -143,7 +143,7 @@ h2.sub_main{text-align: center; padding: 10px 0;}
 
 /*라이트박스*/
 div.lightbox{
-	display: none;position: fixed; z-index: 1000;  left: 50%; top: 50%; width: 1000px; height:800px; overflow: scroll; margin: -450px 0 0; margin-left: -500px;}
+	display: none;position: fixed; z-index: 1000;  left: 50%; top: 50%; width: 1000px; height:800px; overflow: auto; margin: -450px 0 0; margin-left: -500px;}
 div.lightbox>.close{position: absolute;text-indent: -9999px;}
 div.lightbox>img{display: block; width: 100%;}
 div.shadow{display: none; position: fixed;  z-index: 999; left: 0; top: 0; width: 100%; height: 100%; background-color: #000; opacity: 0.55;}
@@ -154,7 +154,7 @@ div.shadow{display: none; position: fixed;  z-index: 999; left: 0; top: 0; width
 .portfolio>.portfolio_slides{position: relative; top: 50px;overflow: hidden; height: 500px;}
 .portfolio>.portfolio_slides>h2{padding: 0;}
 
-.portfolio>.portfolio_slides>.portfolio_slides-container{position: absolute; left: 0; top: 0px; width: 7200px; height: 450px;}
+.portfolio>.portfolio_slides>.portfolio_slides-container{position: absolute; left: 0; top: 0px; width: 8400px; height: 450px;}
 .portfolio>.portfolio_slides>.portfolio_slides-container>li{float: left; width: 1200px;padding-top: 50px;}
 .portfolio>.portfolio_slides>.portfolio_slides-container>li>.portfolio_img{float: left;width: 652px; height: 395px; text-indent: -9999px;}
 .portfolio>.portfolio_slides>.portfolio_slides-container>li:nth-of-type(1)>.portfolio_img{ background-image: url(../images/portfolio_page_1.png);}
@@ -163,6 +163,7 @@ div.shadow{display: none; position: fixed;  z-index: 999; left: 0; top: 0; width
 .portfolio>.portfolio_slides>.portfolio_slides-container>li:nth-of-type(4)>.portfolio_img{ background-image: url(../images/portfolio_page_4.png);}
 .portfolio>.portfolio_slides>.portfolio_slides-container>li:nth-of-type(5)>.portfolio_img{ background-image: url(../images/portfolio_page_5.png);}
 .portfolio>.portfolio_slides>.portfolio_slides-container>li:nth-of-type(6)>.portfolio_img{ background-image: url(../images/portfolio_page_6.png);}
+.portfolio>.portfolio_slides>.portfolio_slides-container>li:nth-of-type(7)>.portfolio_img{ background-image: url(../images/portfolio_page_7.png);}
 .portfolio>.portfolio_slides>.portfolio_slides-container>li>.portfolio_txt{float: left;width: 548px; height: 400px;}
 .portfolio>.portfolio_slides>.portfolio_slides-container>li>.portfolio_txt>h2{font-size: 28px; font-weight: 700;}
 .portfolio>.portfolio_slides>.portfolio_slides-container>li>.portfolio_txt>p{font-size: 18px; font-weight: 100; padding: 15px 0; line-height: 1.2;}
@@ -175,7 +176,7 @@ div.shadow{display: none; position: fixed;  z-index: 999; left: 0; top: 0; width
 .portfolio>.portfolio_slides>.portfolio_slides-container>li>.portfolio_txt>a:hover{color: #fff;background-color: #ff4a4a; border:1px solid #ff4a4a;}
 
 /*section.portfolio_web - pagination*/
-.portfolio>.portfolio_slides>.portfolio-pagination{display: flex; justify-content: space-between; position: absolute; z-index: 200;left: 50%; bottom: 0px; margin-left: -319px;}
+.portfolio>.portfolio_slides>.portfolio-pagination{display: flex; justify-content: space-between; position: absolute; z-index: 200;left: 50%; bottom: 0px; margin-left: -392px;}
 .portfolio>.portfolio_slides>.portfolio-pagination>li:before{width: 100%; height: 100%; padding: 0 15px; color: #848484;content: '|';}
 .portfolio>.portfolio_slides>.portfolio-pagination>li:first-child:before{display: none;}
 .portfolio>.portfolio_slides>.portfolio-pagination>li{font-size: 24px; font-weight: 100; line-height: 1;}
