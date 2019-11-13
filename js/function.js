@@ -26,7 +26,7 @@ $(function(){
 		$('section').each(function(){
 		arrContTop.push($(this).offset().top);
 		});
-		console.log('arrContTop = ', arrContTop); 
+		//console.log('arrContTop = ', arrContTop); 
 	
 	}
 	
@@ -170,7 +170,7 @@ $(function(){
 		evt.preventDefault();
 		
 		$lightbox.children('img').attr({
-			src:'./Game/plan/game_plan.jpg',
+			src:'./GAME/plan/game_plan.jpg',
 			alt:'두더지 게임 시안'
 		});
 		$('div.shadow').show();
