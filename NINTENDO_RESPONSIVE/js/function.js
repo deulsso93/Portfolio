@@ -11,14 +11,9 @@ $(function(){
 	var $sub=$('header>nav>.header_container>li>.sub');	
 	var $btnNav=$('header>.btn_mnu>.btn-folded');
 	var nowIdx=0;
-
+	var $img=$('#slides>.slides-container>div>a');
 	
-	if($windowW<=1200){
-		chkMobile = true;
-		mobileEvent(); // mobile only
-	}else{
-		pcEvent(); // pc only
-	}
+	
 	
 			
 	
@@ -49,8 +44,7 @@ function mobileEvent(){
 			});			
 		
 }	
-	
-	
+
 //이벤트 클리어
 
 function clearPc(){
@@ -65,21 +59,29 @@ function clearMobile(){
  $btnNav.off('click');	
  $nav.off('click');	
 }
+	
+if($windowW<1200){
+		clearPc();
+		mobileEvent(); // mobile only
+	}else{
+		clearMobile();
+		pcEvent(); // pc only
+	}	
 
-$(window).resize(function(){
-		var $windowW=$(window).width();	
+
+$(window).on('resize',function(){
+		var $windowW=$('html,body').width();	
 		if($windowW>1200 && chkmobile===true){
 			chkmobile=false;
 			clearMobile();
 			pcEvent();
 
-		}else if($windowW<=1200 && chkmobile===false){
+		}else{
 			chkmobile=true;
 			clearPc();
 			mobileEvent();
-		}	
+		}
 	});
-	
 
 });
 
@@ -90,13 +92,13 @@ $(function(){
 	
 //owl 슬라이드
 $(".owl-carousel").owlCarousel({
-	nav:true,
 	loop: true, 
 	 autoplay:true,
 	 responsive:{ 
-		 0:{ items:1,nav:true}, 
-		 480:{ items:1,nav:false}, 
-		 768:{ items:1,nav:false} 
+		 0:{ items:1}, 
+		 480:{ items:1}, 
+		 768:{ items:1}, 
+		 1200:{ items:1} 
 	 }	
 });
 	$('.owl-next').click(function() {

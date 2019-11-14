@@ -3,10 +3,9 @@
 /*media query*/
 
 
-
+/*1200px*/
 @media screen and (max-width:1200px){
-	body{font-size: 0.5vw; overflow: auto;}
-	
+	#wrap{width: 100%; margin: 0; overflow: hidden;}
 	/*nav*/
 	header{height:60px; background-color: #e60012;}
 	header>h1{width: 94px; padding-left: 30px;background-image: url(../images/logo_nintendo_red.gif); background-repeat: no-repeat; background-size: 94px 23px;}
@@ -28,19 +27,18 @@
 	header>.btn_mnu>.btn-search:before{display: block; width: 27px; height: 27px; background-position: 0 -15px; margin: 15px auto ;background-image: url(../images/search.png); background-size: 30px 45px; content: '';}	
 	header>.btn_mnu>.btn-search:after{background: none;}	
 	
-	
+	#slides>.owl-nav>div{top: 25%;margin-top: 0;}
 	
 	
 	/*article*/
 	
-	article{width: auto;}
+	article{width:100%; margin: 0;}
 	article>.tit{padding: 0 20px;}
-	article>.contents{width: auto;  margin: 30px 20px; padding: 0 20px;}
-	article>.contents>li{width: calc((100% - 60px)/4); margin-left: 10px;margin-bottom: 10px;}
-	article>.contents>li:nth-child(1),article>.contents>li:nth-child(5){margin-left: 0;}
-	article>.contents>li>a{height:160px; transition:all 0.3s;}
-	article>.contents>li:hover>a{background-color:rgba(255,255,255,0.3);}
-	
+	article>.contents{width: 100%;  margin: 30px 0px 0; padding: 0 10px;}
+	article>.contents>li{width: calc((100% - 50px) / 4); margin-left: 10px;margin-bottom: 10px;}
+	article>.contents>li:nth-child(1),
+	article>.contents>li:nth-child(5){margin-left: 0;}
+	article>.contents>li>a{width: 100%;}
 	article>.contents>li>.context{padding:5px 0 10px;}
 	article>.contents>li>.context>.sub_tit,
 	article>.contents>li>.context .sub_tit{font-size: 12px;}	
@@ -55,8 +53,8 @@
 	
 	.download{width: auto; margin: 10px 0;}
 	
-	article.game-list>.info-video{width: auto; margin-left: 20px; margin-right: 20px;margin-top: 20px;}
-	article.game-list>.info-video>li{background-size: cover;}
+	article.game-list>.info-video{justify-content: space-around; margin: 20px 0;}
+	article.game-list>.info-video>li{width:calc((100% - 51px) / 3); background-size: cover; background-position: center center; background-repeat: no-repeat;}
 	article.game-list>.info-video>li>a{height:120px;}
 	
 	article.game-list>.etc{margin: 30px 20px 20px;}
@@ -102,3 +100,62 @@
 	footer{padding: 20px 0;}
 	footer>.inner{width: auto;margin:0 20px;}	
 	footer>.inner>li{font-size: 12px;}	
+}
+
+/*tablet*/
+@media screen and (max-width:768px){
+	#wrap{width: 100%; margin: 0;}
+	
+	#slides>.slides-container>div>a>img{display: block; width: 100%;}
+	#slides>.owl-nav>div{display: none;}
+	
+	
+	/*article*/
+	article>.tit{padding: 15px 20px; text-align: center; font-size: 20px;}
+	article>.contents{width: 100%; margin: 0; padding: 0 5%;}
+	article>.contents>li{width: 40%; margin-left: 10%;}
+	article>.contents>li:nth-child(3),
+	article>.contents>li:nth-child(7)
+	{margin-left: 0;}
+	article>.contents>li>.context{padding:5px 0 10px;}
+	article>.contents>li>.context>.sub_tit,
+	article>.contents>li>.context .sub_tit{font-size: 12px;}	
+	article>.contents>li>.context>p:first-of-type{height: 50px;font-size: 14px;}
+	article>.contents>li>a{height: 180px;} 
+	
+	/*info-video*/
+	article.game-list>.info-video{display: block; justify-content: none; width: 100%;}
+	article.game-list>.info-video>li{width:100%; margin-bottom: 20px;background-size: cover;}
+	article.game-list>.info-video>li:nth-child(1){background-image: url(../images/m_banner_main_bottom01.jpg);}
+	article.game-list>.info-video>li:nth-child(2){background-image: url(../images/m_banner_main_bottom02.jpg);}
+	article.game-list>.info-video>li:nth-child(3){margin-bottom: 0;background-image: url(../images/m_banner_main_bottom03.jpg);}
+	
+	/*news_short*/
+	article.game-list>.news_short>h4{padding: 20px 20px 0px 15px;}
+	article.game-list>.news_short>.news_txt>li{float: none; font-size: 14px;margin-left: 0;}	
+	article.game-list>.news_short>.news_txt>li:last-child{margin-left: 0;}
+	
+	/*section bottom*/
+
+	/*link*/
+	section.bottom .link>.link_nintendo>li{float: none; margin-left: 0; margin-bottom: 20px;}
+	section.bottom .link>.link_nintendo>li:last-child{margin-bottom: 0;}
+
+		/*footer*/
+	footer{text-align: center;}
+	footer>.inner{width: 100%;}
+	footer>.inner>.footer_user-info{display: inline-block;text-align: center;}
+	footer>.inner>p{display: none;}	
+	footer>.inner>.footer_company-info>li{float: none; margin-left: 0;}
+}
+
+/*mobile*/
+@media screen and (max-width:480px){
+	#wrap{width: 100%; margin: 0;}
+	
+	article>.contents{width: 100%; margin: 0; padding: 0 1%;}
+	article>.contents>li{width: 48%; margin-left:2%;}
+	article>.contents>li>a{height: 135px;} 
+	
+	section.bottom .link>.link_nintendo>li{margin-top: 10px; margin-bottom: 0px;}
+}
