@@ -40,8 +40,9 @@ section{width: 100%;}
 /*슬라이드*/
 #slides{width: 100%;}
 #slides>.slides-container{overflow: hidden;position: relative; width: 100%; height: 100%;}
-#slides>.slides-container>div{}
-#slides>.slides-container>div>a{display: block; width: 100%; height: 100%;text-indent: -9999px;}
+#slides>.slides-container1>.bannerB{}
+#slides>.slides-container2{display: none;}
+#slides>.slides-container1>.bannerB>a{display: block; width: 100%; height: 100%;text-indent: -9999px;}
 
 
 
