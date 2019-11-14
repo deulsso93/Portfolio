@@ -57,6 +57,8 @@ $(function(){
 		
 	}	
 	
+		
+
 	//캐릭터 출몰
 	
 	function start(){
@@ -104,11 +106,7 @@ $(function(){
 	//캐릭터 click
 	$char.on('click',function(){
 		
-		$comment.text('으악! 잡혔다!');
-		$(this).children('img').attr({
-			'src' : 'images/char_hit_'+nowIdx+'.png'
-		
-		});
+
 		
 		if(nowIdx===1){
 			score += 100;
@@ -116,11 +114,23 @@ $(function(){
 			score += 100;
 		}else{
 			score += 1000;
-		}
+		}		
 		$score.text(score);
+		$(this).css({
+			cursor : "url(images/cursor_2.png),auto"
+		});
+		$comment.text('으악! 잡혔다!');
+		$(this).children('img').attr({
+			'src' : 'images/char_hit_'+nowIdx+'.png'
+		
+		});		
+	});
+	$char.on('mouseover',function(){
+		$(this).css({
+			cursor : "url(images/cursor_1.png),auto"
+		});		
 		
 	});
-	
 });
 
 

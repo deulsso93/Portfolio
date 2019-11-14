@@ -5,6 +5,8 @@
 
 /*bgcolor dd8b46*/
 
+
+html{}
 body{font-family: 'Noto Sans KR','Malgun Gothic','맑은 고딕','Apple SD Gothic Neo','돋움',dotum, sans-serif; color: #1e1e1e;}
 
 ::selection{background-color:rgba(255,238,51,0.99);}
@@ -37,7 +39,7 @@ header>.main>.main_mascot{position: absolute;z-index: 1000;left: 50%; margin-lef
 section{position: relative;height: 1070px; background-color: #dd8b46;}
 section:before{position: absolute; left: 0; top: 0; width: 100%; height: 48px; background-image: url(../images/bg_deco.png); content: '';}
 
-section>article>.game{position: relative; left: 50%; top: 80px;width: 800px; height: 914px; margin-left: -400px;background-image: url(../images/game_bg.jpg);}
+section>article>.game{position: relative; left: 50%; top: 80px;width: 800px; height: 914px; margin-left: -400px;background-image: url(../images/game_bg.jpg); cursor:url(../images/cursor_1.png),auto;}
 section>article>.game>h2{position: absolute;top: 0; left: 50%;width:650px; height: 41px; margin-left: -325px;background-image: url(../images/status.png);text-align: center;}
 section>article>.game>h2>span{display: inline-block;padding-top: 5px;}
 
@@ -50,7 +52,7 @@ section>article>.game>.part3{top: 695px;}
 /*y - 80 330 580 (250)*/
 section>article>.game>.frame{display: none; position: absolute; z-index: 700; left:70px; top: 80px;width: 160px;}
 section>article>.game>.frame>img{display: block; width: 100%;}
-section>article>.game>button{background: none; outline: none; border: none; position: absolute; bottom: 10px; left: 20px; width: 235px; height: 64px; background-image: url(../images/btn_start.png); text-indent: -9999px; cursor: pointer;}
+section>article>.game>button{background: none; outline: none; border: none; position: absolute; bottom: 10px; left: 20px; width: 235px; height: 64px; background-image: url(../images/btn_start.png); text-indent: -9999px;}
 section>article>.game>.score{position: absolute; right: 10px; bottom: 10px; color: #fff;font-size: 60px; font-weight: 700; }
 
 
