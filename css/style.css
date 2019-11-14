@@ -171,7 +171,8 @@ div.shadow{display: none; position: fixed;  z-index: 999; left: 0; top: 0; width
 .portfolio>.portfolio_slides>.portfolio_slides-container>li>.portfolio_txt>a{display: inline-block; width: 223px; height: 62px; margin-top: 70px;margin-left: 10px; font-size: 20px; font-weight: 100; text-align: center;line-height: 62px;border: 1px solid #828282;background-color: #fff; cursor: pointer; transition:all 0.4s;}
 
 /*section.portfolio_web - 버튼*/
-.portfolio>.portfolio_slides>.portfolio_slides-container>li:nth-of-type(4)>.portfolio_txt>a{margin-top: 50px;}
+.portfolio>.portfolio_slides>.portfolio_slides-container>li:nth-of-type(4)>.portfolio_txt>a{margin-top: 25px;}
+.portfolio>.portfolio_slides>.portfolio_slides-container>li:nth-of-type(7)>.portfolio_txt>a{margin-top: 30px;}
 .portfolio>.portfolio_slides>.portfolio_slides-container>li>.portfolio_txt>.web{margin-left: 0;}
 .portfolio>.portfolio_slides>.portfolio_slides-container>li>.portfolio_txt>a:hover{color: #fff;background-color: #ff4a4a; border:1px solid #ff4a4a;}
 
