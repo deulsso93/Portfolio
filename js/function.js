@@ -62,10 +62,9 @@ $(function(){
 $(function(){
 	
 	
-	
 	//portfolio_illust grid
-        $(window).load(function() {
-            var options =
+        $(window).on('resize',function() {
+            var options1 =
             {
                 srcNode: 'img',             
                 margin: '20px',            
@@ -74,9 +73,25 @@ $(function(){
                 resizable: true,          
                 transition: 'all 0' 
             }
-            $('.grid').gridify(options);
+			var options2 =
+            {
+                srcNode: 'img',             
+                margin: '20px',            
+                width: '320px',             
+                max_width: '', 
+                resizable: true,          
+                transition: 'all 0' 
+            }
+			if($(window).width()>768){
+				
+            	$('.grid').gridify(options1);
+			}else{
+				$('.grid').gridify(options2);
+			}
+			
         });	
 
+	
 	
 	
 	$('.merit').height($(window).height()); //aboutme_merit 높이

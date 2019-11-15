@@ -9,7 +9,7 @@ body{font-family: 'Noto Sans KR','Oswald',sans-serif; color: #454545;}
 #wrap{min-width:1200px;}
 
 /*Main - 메인 배경화면 및 제목*/
-header{position: relative;width: 100%; min-width:1200px;}
+header{position: relative;min-width:1200px;}
 header>.home{height: 100%; background-image: url(../images/main_bg.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center;}
 header>.home>.home_container{position: relative; width: 100%; height: 100%; margin: 0 auto;background-color: rgba(69,69,69,0.5);}
 header>.home>.home_container>.home_title{position: absolute; top: 120px; left: 50%; margin-left: -150px;width: 300px; height: 512px;}
@@ -18,10 +18,6 @@ header>.home>.home_container>.home_title>h2>span{color: #ff4a4a; padding-right: 
 header>.home>.home_container>.home_title>.logo{width: 297px;height: 297px;text-indent: -9999px; background-image: url(../images/main_logo.png); background-repeat: no-repeat;margin: 25px 0 15px;}
 header>.home>.home_container>.home_title>p{color: #fff;text-align: center; line-height: 1.2; font-size: 30px; font-weight: 400; }
 header>.home>.home_container>.home_title>p:nth-of-type(2):after{display: block;width: 294px; height: 2px; margin: 10px 0;border: 2px solid #fff;content: '';}
-
-
-
-
 
 /*navigation bar*/
 header>.header_container{position: fixed; top: 0;left: 0; z-index: 100;width: 100%; height: 60px; background-color: #fff; opacity:0.7;}
@@ -50,8 +46,8 @@ h2.sub_main{text-align: center; padding: 10px 0;}
 .aboutme>.profile>.aboutme_profile>.aboutme_profile_txt>p:nth-of-type(2){font-weight: 100;}
 
 /*section.aboutme_moto*/
-.aboutme>.profile>.aboutme_moto{padding-top: 50px;}
-.aboutme>.profile>.aboutme_moto>span{display: block; width: 68px; height: 79px; margin-left: 575px;background-image: url(../images/aboutme_moto.png); background-repeat: no-repeat; text-indent: -9999px;}
+.aboutme>.profile>.aboutme_moto{position: relative;margin-top: 20px;padding-top: 80px;}
+.aboutme>.profile>.aboutme_moto>span{position: absolute;display: block; left: 50%; margin-left: -28px; top: 0px;width: 68px; height: 79px;/* margin-left: 575px;*/background-image: url(../images/aboutme_moto.png); background-repeat: no-repeat; text-indent: -9999px;}
 .aboutme>.profile>.aboutme_moto>h2{}
 .aboutme>.profile>.aboutme_moto>p{font-weight: 100; font-size: 18px;}
 .aboutme>.profile>.aboutme_moto>p:nth-of-type(1){padding: 10px 0;font-size: 20px;font-weight: 400;}
@@ -119,7 +115,7 @@ h2.sub_main{text-align: center; padding: 10px 0;}
 
 
 /*section.aboutme_skills*/
-.aboutme>.skills{width: 1200px; margin: 0 auto;}
+.aboutme>.skills{width: 1200px; margin: 0 auto; text-align: center;}
 .aboutme>.skills>.chart{position: relative;float: left; width: 190px; height: 190px; margin-left: 62.5px;padding-top: 20px;}
 .aboutme>.skills>.chart:first-of-type{margin-left: 0;}
 .aboutme>.skills>.chart>.percent,.aboutme>.skills>.chart>.tit{position: absolute; left: 50%;}
@@ -152,7 +148,7 @@ div.shadow{display: none; position: fixed;  z-index: 999; left: 0; top: 0; width
 /*section.portfolio_web - 슬라이드*/
 .portfolio{width: 1200px;margin: 0 auto;}
 .portfolio>.portfolio_slides{position: relative; top: 50px;overflow: hidden; height: 500px;}
-.portfolio>.portfolio_slides>h2{padding: 0;}
+.portfolio>.portfolio_slides>h2{text-align: center;padding: 0;}
 
 .portfolio>.portfolio_slides>.portfolio_slides-container{position: absolute; left: 0; top: 0px; width: 8400px; height: 450px;}
 .portfolio>.portfolio_slides>.portfolio_slides-container>li{float: left; width: 1200px;padding-top: 50px;}
@@ -188,6 +184,7 @@ div.shadow{display: none; position: fixed;  z-index: 999; left: 0; top: 0; width
 /*section.portfolio_illust*/
 
 .portfolio>.portfolio-grid-wrap{padding-top: 100px;min-width: 1200px; height: 4100px;}
+.portfolio>.portfolio-grid-wrap>h2{text-align: center;}
 .portfolio>.portfolio-grid-wrap>.grid{width: 1200px; height:100%;}
 
 .portfolio>.portfolio-grid-wrap>.grid>img{transition:all 0.1s;}
