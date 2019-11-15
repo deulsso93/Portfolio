@@ -60,7 +60,7 @@ $mnu.eq(mnuIdx).parent().addClass('on');
 	function moveFn(){
 		$indicatorOne.eq(nowIdx).parent().addClass('on').siblings().removeClass('on');
 		
-		$containerOne.stop().animate({left:-900*nowIdx},500);
+		$containerOne.stop().animate({left:-900*nowIdx},1000,'easeInOutCubic');
 		
 	}
 	
