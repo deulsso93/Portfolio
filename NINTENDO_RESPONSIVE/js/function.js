@@ -15,8 +15,21 @@ $(function(){
 	
 	
 	
-			
+//이벤트 클리어
+function clearPc(){
+ $nav.off('mouseenter');
+ $nav.off('mouseleave');
+ 
+
 	
+}
+	
+function clearMobile(){
+ $btnNav.off('click');	
+ $nav.off('click');	
+}			
+	
+//이벤트 발생 (각자)	
 function pcEvent(){
 		$nav.on('mouseenter',function(){
 			nowIdx=$nav.index(this);
@@ -27,7 +40,8 @@ function pcEvent(){
 			nowIdx=$nav.index(this);
 			$sub.eq(nowIdx).stop().slideUp(200);
 
-		});			
+		});	
+		clearMobile();
 	}	
 
 function mobileEvent(){
@@ -41,29 +55,18 @@ function mobileEvent(){
 			nowIdx=$nav.index(this);
 			$nav.eq(nowIdx).toggleClass('on');
 			$sub.eq(nowIdx).stop().slideToggle(200);
-			});			
+			});		
+		clearPc();
 		
 }	
 
-//이벤트 클리어
 
-function clearPc(){
- $nav.off('mouseenter');
- $nav.off('mouseleave');
- 
 
-	
-}
-	
-function clearMobile(){
- $btnNav.off('click');	
- $nav.off('click');	
-}
 	
 if($windowW<1200){
 		clearPc();
 		mobileEvent(); // mobile only
-	}else if($windowW>1200){
+	}else{
 		clearMobile();
 		pcEvent(); // pc only
 	}	
@@ -73,30 +76,42 @@ $(window).on('resize',function(){
 		var $windowW=$(window).width();	
 		if($windowW>1200 && chkmobile===true){
 			chkmobile=false;
-			clearMobile();
 			pcEvent();
 
 		}else if($windowW<1200 && chkmobile===false){
 			chkmobile=true;
-			clearPc();
 			mobileEvent();
 		}
 	});
 
 });
 
+
+
 	
 
-//slides	
+
 $(function(){
+
+//top으로 가기
+
+$('.navi>.navi_wrap>a.top').on('click',function(evt){
+	evt.preventDefault();
 	
+	$('html, body').animate({
+		'scrollTop' : 0
+		
+	},1000);
+});	
+	
+//slides	
 //owl 슬라이드
 $(".owl-carousel").owlCarousel({
 	loop: true, 
 	 autoplay:true,
 	 responsive:{ 
 		 0:{ items:1}, 
-		 480:{ items:1,autoWidth:480}, 
+		 480:{ items:1}, 
 		 768:{ items:1}, 
 		 1200:{ items:1} 
 	

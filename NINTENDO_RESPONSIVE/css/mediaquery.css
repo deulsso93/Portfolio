@@ -140,6 +140,7 @@
 	/*section bottom*/
 
 	/*link*/
+	section.bottom .link>.link_sns{margin-right: 20px;}
 	section.bottom .link>.link_nintendo>li{float: none; margin-left: 0; margin-bottom: 20px;}
 	section.bottom .link>.link_nintendo>li:last-child{margin-bottom: 0;}
 
@@ -164,5 +165,10 @@
 	article>.contents>li{width: 48%; margin-left:2%;}
 	article>.contents>li>a{height: 135px;} 
 	
+	
+	article.game-list>.etc>div>a>span{text-align: middle; top: 20px;font-size: 14px;}
+	article.game-list>.etc>div:nth-of-type(1)>a>span{top: 30px;}
+	article.game-list>.etc>div>a>span:before{display: none;}
 	section.bottom .link>.link_nintendo>li{margin-top: 10px; margin-bottom: 0px;}
+	section.bottom .link>.link_sns{margin-right: 0;}
 }
