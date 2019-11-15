@@ -183,7 +183,7 @@ div.shadow{display: none; position: fixed;  z-index: 999; left: 0; top: 0; width
 
 /*section.portfolio_illust*/
 
-.portfolio>.portfolio-grid-wrap{padding-top: 100px;min-width: 1200px; height: 4100px;}
+.portfolio>.portfolio-grid-wrap{padding-top: 100px;min-width: 1200px; height: 100%;}
 .portfolio>.portfolio-grid-wrap>h2{text-align: center;}
 .portfolio>.portfolio-grid-wrap>.grid{width: 1200px; height:100%;}
 

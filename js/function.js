@@ -26,7 +26,7 @@ $(function(){
 		$('section').each(function(){
 		arrContTop.push($(this).offset().top);
 		});
-		//console.log('arrContTop = ', arrContTop); 
+		console.log('arrContTop = ', arrContTop); 
 	
 	}
 	
@@ -62,6 +62,7 @@ $(function(){
 $(function(){
 	
 	
+	
 	//portfolio_illust grid
         $(window).on('resize',function() {
             var options1 =
@@ -82,16 +83,17 @@ $(function(){
                 resizable: true,          
                 transition: 'all 0' 
             }
+			if($(window).width()<768){
+				$('.grid').gridify(options2);
+            	
+			}
 			if($(window).width()>768){
 				
-            	$('.grid').gridify(options1);
-			}else{
-				$('.grid').gridify(options2);
+				$('.grid').gridify(options1);
 			}
 			
         });	
 
-	
 	
 	
 	$('.merit').height($(window).height()); //aboutme_merit 높이
@@ -126,7 +128,7 @@ $(function(){
 		
 		//indicator 활성화
 		$indicator.eq(nowIdx).parent().addClass('on').siblings().removeClass('on');
-		$container.stop().animate({left:-1200*nowIdx},800);
+		$container.stop().animate({left:-1200*nowIdx},800,'easeInOutCubic');
 	}
 	
 	//indicator 클릭이벤트
@@ -151,7 +153,7 @@ $(function(){
 		evt.preventDefault();
 		
 		$lightbox.children('img').attr({
-			src:'./MUNGU-LAND/plan/muguland_plan.jpg',
+			src:'../../MUNGU-LAND/plan/muguland_plan.jpg',
 			alt:'문구랜드 기획안'
 		});
 		$('div.shadow').show();
@@ -162,19 +164,19 @@ $(function(){
 		evt.preventDefault();
 		
 		$lightbox.children('img').attr({
-			src:'./KAKAO_renewel/plan/kakao_renewel_plan.jpg',
+			src:'../../KAKAO_renewel/plan/kakao_renewel_plan.jpg',
 			alt:'카카오 리뉴얼 기획안'			
 			
 		});
 		$('div.shadow').show();
 		$('div.shadow').next().show();		
 		
-	});	
+	});
 	$('a.progress3').on('click',function(evt){
 		evt.preventDefault();
 		
 		$lightbox.children('img').attr({
-			src:'./ONEPAGE/plan/onepage_plan.gif',
+			src:'../../ONEPAGE/plan/onepage_plan.gif',
 			alt:'원페이지 FOOLS GARDEN기획안'
 		});
 		$('div.shadow').show();
@@ -185,13 +187,14 @@ $(function(){
 		evt.preventDefault();
 		
 		$lightbox.children('img').attr({
-			src:'./GAME/plan/game_plan.jpg',
+			src:'../../GAME/plan/game_plan.jpg',
 			alt:'두더지 게임 시안'
 		});
 		$('div.shadow').show();
 		$('div.shadow').next().show();
 		
-	});			
+	});		
+	
 	//닫힘
 	$('div.shadow').on('click',function(){
 			$lightbox.hide();
