@@ -82,11 +82,11 @@ $(function(){
             }
 				if($(window).width()>768){
             	$('.grid').gridify(options1);
-				$('.portfolio-grid-wrap').css('height','4200px');
+				$('.portfolio-grid-wrap').css('height','4400px');
 					
 				}else{
 				 $('.grid').gridify(options2);
-					$('.portfolio-grid-wrap').css('height','5200px');	
+					$('.portfolio-grid-wrap').css('height','5500px');	
 				}
 			
 			
