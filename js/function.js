@@ -68,22 +68,26 @@ $(function(){
             {
                 srcNode: 'img',             
                 margin: '20px',            
-                width: '360px',             
-                max_width: '', 
+                width: '360px',  
                 resizable: true,          
                 transition: 'all 0' 
             }
-/*			var options2 =
+			var options2 =
             {
                 srcNode: 'img',             
                 margin: '20px',            
-                width: '320px',             
-                max_width: '', 
+                width: '320px', 
                 resizable: true,          
                 transition: 'all 0' 
-            }*/
-				
+            }
+				if($(window).width()>768){
             	$('.grid').gridify(options1);
+				$('.portfolio-grid-wrap').css('height','4200px');
+					
+				}else{
+				 $('.grid').gridify(options2);
+					$('.portfolio-grid-wrap').css('height','5200px');	
+				}
 			
 			
         });	
