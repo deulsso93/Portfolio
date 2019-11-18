@@ -86,7 +86,7 @@ $(function(){
 					
 				}else{
 				 $('.grid').gridify(options2);
-					$('.portfolio-grid-wrap').css('height','6000px');	
+					$('.portfolio-grid-wrap').css('height','6500px');	
 				}
 			
 			
