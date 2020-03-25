@@ -1,0 +1,7 @@
+modaal (스크롤 이벤트)
+http://humaan.com/modaal/
+
+cookie (인터넷 쿠키 생성)
+https://offbyone.tistory.com/176
+
+rollover (hover 제이쿼리 이벤트)https://www.thewordcracker.com/jquery-examples/jquery%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%9C-%EA%B8%B0%EB%B3%B8%EC%A0%81%EC%9D%B8-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EB%A1%A4%EC%98%A4%EB%B2%84rollover-%ED%9A%A8%EA%B3%BC/

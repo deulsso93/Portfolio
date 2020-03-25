@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+/*media query*/
+
+
+/*1200px*/
+@media screen and (max-width:1200px){
+}
+
+/*tablet*/
+@media screen and (max-width:768px){
+
+}
+
+/*mobile*/
+@media screen and (max-width:480px){
+
+}
