@@ -160,6 +160,7 @@ div.shadow{display: none; position: fixed;  z-index: 999; left: 0; top: 0; width
 .portfolio>.portfolio_slides>.portfolio_slides-container>li:nth-of-type(5)>.portfolio_img{ background-image: url(../images/portfolio_page_5.png);}
 .portfolio>.portfolio_slides>.portfolio_slides-container>li:nth-of-type(6)>.portfolio_img{ background-image: url(../images/portfolio_page_6.png);}
 .portfolio>.portfolio_slides>.portfolio_slides-container>li:nth-of-type(7)>.portfolio_img{ background-image: url(../images/portfolio_page_7.png);}
+.portfolio>.portfolio_slides>.portfolio_slides-container>li:nth-of-type(8)>.portfolio_img{ background-image: url(../images/portfolio_page_8.png);}
 .portfolio>.portfolio_slides>.portfolio_slides-container>li>.portfolio_txt{float: left;width: 548px; height: 400px;}
 .portfolio>.portfolio_slides>.portfolio_slides-container>li>.portfolio_txt>h2{font-size: 28px; font-weight: 700;}
 .portfolio>.portfolio_slides>.portfolio_slides-container>li>.portfolio_txt>p{font-size: 18px; font-weight: 100; padding: 15px 0; line-height: 1.2;}
